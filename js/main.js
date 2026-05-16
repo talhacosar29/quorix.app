@@ -27,7 +27,7 @@
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\n\n${message}`
       );
-      const mailto = form.dataset.mailto || "contact@tycosoftware.com";
+      const mailto = form.dataset.mailto || "app.quorix@gmail.com";
       window.location.href = `mailto:${mailto}?subject=${subject}&body=${body}`;
     });
   }

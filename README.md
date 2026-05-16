@@ -31,11 +31,20 @@ quorix.app/          ← GitHub repo name (must match for this URL)
    ```
 
 3. On GitHub: **Settings → Pages**
-   - Source: **Deploy from a branch**
-   - Branch: **main** / **/ (root)**
+   - **Build and deployment → Source:** `GitHub Actions` (not “Deploy from a branch”)
    - Save
 
-4. After 1–2 minutes, open: **https://talhacosar29.github.io/quorix.app/**
+4. Push again or re-run the workflow: **Actions → Deploy GitHub Pages → Re-run**
+
+5. After 1–2 minutes, open: **https://talhacosar29.github.io/quorix.app/**
+
+### Workflow failed with “Get Pages site failed” / “Not Found”?
+
+Pages is not enabled yet, or Source is still “Deploy from a branch”. Fix:
+
+1. Repo → **Settings → Pages**
+2. Under **Build and deployment**, choose **GitHub Actions**
+3. **Actions** tab → failed run → **Re-run all jobs**
 
 ## App Store URLs
 
@@ -57,5 +66,5 @@ python3 -m http.server 8080
 
 ## Customize
 
-- Email: edit `contact@tycosoftware.com` in `privacy.html`, `contact.html`, and `js/main.js`
+- Email: `app.quorix@gmail.com` (privacy, contact, form)
 - Store links: update badges in `index.html` when apps are live
