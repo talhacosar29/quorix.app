@@ -122,6 +122,12 @@ a:hover {
   object-fit: cover;
 }
 
+.brand-sub {
+  font-weight: 500;
+  color: var(--text-muted);
+  font-size: 0.92em;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -298,6 +304,91 @@ a:hover {
 .store-badge strong {
   display: block;
   font-size: 1rem;
+}
+
+.store-badges--live .store-badge {
+  cursor: pointer;
+}
+
+.store-badges--live .store-badge:hover {
+  border-color: rgba(0, 229, 255, 0.45);
+  box-shadow: 0 8px 28px rgba(124, 58, 237, 0.2);
+}
+
+.smart-link-hint {
+  margin: 1.25rem 0 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.smart-link-hint a {
+  color: var(--cyan);
+  font-weight: 600;
+}
+
+/* —— Download page —— */
+.download-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0 4rem;
+}
+
+.download-card {
+  max-width: 480px;
+  margin-inline: auto;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: rgba(21, 27, 43, 0.85);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(12px);
+}
+
+.download-logo {
+  margin: 0 auto 1.25rem;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.download-card h1 {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  margin: 0 0 0.75rem;
+}
+
+.download-lead {
+  color: var(--text-muted);
+  margin: 0 0 1.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.download-card .store-badges {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.download-card .store-badge {
+  justify-content: center;
+}
+
+.download-note {
+  margin: 1.5rem 0 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
+.download-note code {
+  font-size: 0.7rem;
+  color: var(--cyan);
+}
+
+.download-back {
+  margin-top: 1.5rem;
+  display: inline-flex;
 }
 
 /* —— Stats band —— */
